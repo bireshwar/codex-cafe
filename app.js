@@ -1,5 +1,6 @@
 var express    = require('express');
 var path       = require('path');
+var http       = require('http');
 var app        = express();
 
 var proxy      = require('express-http-proxy');
@@ -22,6 +23,11 @@ app.use('/api', proxy('http://hackerearth.0x10.info', {
   }
 }));
 
-app.listen( 7070, function(){
-  console.log("Server is listening on Port 7070!!!");
-});
+// app.listen( 7070, function(){
+//   console.log("Server is listening on Port 7070!!!");
+// });
+
+http.createServer(function( req, res ){
+  console.log('Express server listening on %d, in %s mode', 7070, app.get('env'));
+})
+.listen(process.env.PORT || 7070)
