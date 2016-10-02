@@ -4,7 +4,8 @@
   "description": "This is the Code Searching Project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   "homepage": "https://github.com/bireshwar/codex-cafe#readme",
   "dependencies": {
     "express": "^4.14.0",
+    "express-http-proxy": "^0.10.0",
     "http": "0.0.0",
     "path": "^0.12.7"
   }
