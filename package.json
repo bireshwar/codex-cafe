@@ -25,5 +25,8 @@
     "express-http-proxy": "^0.10.0",
     "http": "0.0.0",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "https": "^1.0.0"
   }
 }
